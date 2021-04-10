@@ -145,6 +145,22 @@ This would allow the elements to fade out first, then after 200ms the page numbe
 
 If you'd like to take a closer look at how I did it, the complete code is available above in ```/src/components/Slider/Slider.js```.
 
+#### The Scroll
+This achievement was far simpler, yet to me, so much more satisfying. Here's a bit of background information: 
+- On the mobile version of the website, there is a hamburger menu button at the top left corner (see screenshots). At this state, the navigation menu was hidden off-screen using CSS:
+
+```css
+.menu {
+    ...
+    transform: translateY(-110px);
+    transition: all 400ms;
+}
+```
+
+What I wanted to do was have the navigation bar seamlessly close if the user decides to scroll through the page so that they have more screen space for the main content.
+
+Going back to the "X" button, closing the navigation menu 
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
