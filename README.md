@@ -121,7 +121,9 @@ const nextPage = () => {
     heroRef.current.classList.add("out");
     page < 3 ? setPage(page + 1) : setPage(1);
 };
+
 const previousPage = ... ;
+
 useEffect(() => {
     heroRef.current.classList.remove("out");
     if (page === 1) ...
