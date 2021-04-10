@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src='./src/images/room-desktop-screenshot.png' alt='desktop version screenshot'>
+<img src='./src/images/room-desktop-screenshot.png' alt='desktop version screenshot' style='border: 1px solid #000; border-radius: 8px'>
 <img src='./src/images/room-mobile-screenshot.png' alt='mobile version screenshot' width='300' >
 
 ### Links
