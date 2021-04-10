@@ -65,6 +65,22 @@ function Slider() {
         }
     });
 
+    // add keyboard arrow press functionality
+    //***************************************
+    const keyDownHandler = (e) => {
+        if (e.keyCode === 39) {
+            nextPage(e);
+        } else if (e.keyCode === 37) {
+            previousPage(e);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener("keydown", keyDownHandler);
+        return () => document.removeEventListener("keydown", keyDownHandler);
+    });
+    //***************************************
+
     return (
         <div id="sliderContainer">
             <img ref={heroRef} src="" alt="hero" className="hero"/>
