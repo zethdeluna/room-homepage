@@ -56,7 +56,7 @@ To achieve the transitions between pages in the slider, I utilized React's ```us
 
 The user is able to switch between the pages of a slider by clicking its left and right buttons (seen above in the screenshots). I utilized ```useState``` to update the current page of the slider as follows:
 
-There are 3 total slider pages. If the user clicks the "next button" (right arrow), the slider will move from page 1 to page 2. If they click again the slider will move from page 2 to page 3. And another click would move from page 3 to page 1. Thanks to React's ```useState```, I can update the current state of the slider and set its initial state using
+There are 3 total slider pages. If the user clicks the "next" button (right arrow), the slider will move from page 1 to page 2. If they click again the slider will move from page 2 to page 3. And another click would move from page 3 to page 1. Thanks to React's ```useState```, I can update the current state of the slider and set its initial state using
 
 ```javascript
 const [page, setPage] = useState(1);
