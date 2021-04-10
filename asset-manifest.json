@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/room-homepage/static/css/main.cf6e5e7d.chunk.css",
-    "main.js": "/room-homepage/static/js/main.2a3e981c.chunk.js",
-    "main.js.map": "/room-homepage/static/js/main.2a3e981c.chunk.js.map",
+    "main.js": "/room-homepage/static/js/main.bc661007.chunk.js",
+    "main.js.map": "/room-homepage/static/js/main.bc661007.chunk.js.map",
     "runtime-main.js": "/room-homepage/static/js/runtime-main.c66d9a6b.js",
     "runtime-main.js.map": "/room-homepage/static/js/runtime-main.c66d9a6b.js.map",
     "static/js/2.1a229d69.chunk.js": "/room-homepage/static/js/2.1a229d69.chunk.js",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.c66d9a6b.js",
     "static/js/2.1a229d69.chunk.js",
     "static/css/main.cf6e5e7d.chunk.css",
-    "static/js/main.2a3e981c.chunk.js"
+    "static/js/main.bc661007.chunk.js"
   ]
 }
