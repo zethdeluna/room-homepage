@@ -13,7 +13,6 @@ This is a solution to the [Room homepage challenge on Frontend Mentor](https://w
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -27,13 +26,13 @@ Users should be able to:
 
 ### Screenshot
 
-<img src='./src/images/room-desktop-screenshot.png' alt='desktop version screenshot' style='border: 1px solid #000; border-radius: 8px'>
+<img src='./src/images/room-desktop-screenshot.png' alt='desktop version screenshot' >
 <img src='./src/images/room-mobile-screenshot.png' alt='mobile version screenshot' width='300' >
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live Site](https://zethdeluna.github.io/room-homepage/)
 
 ## My process
 
@@ -42,37 +41,18 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+    - React Hooks
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+While working on this project, I feel most accomplished from learning two things:
+- creating a page slider with fade-in/fade-out effects
+- closing the navigation menu when scrolling on the mobile site
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+#### The Slider
+To achieve the transitions between pages in the slider component, I utilized React's ```useState```, ```useEffect``` and ```useRef```.
 
 ### Continued development
 
