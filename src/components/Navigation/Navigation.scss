@@ -1,0 +1,53 @@
+// 
+// Navigation Bar Desktop Style
+// 
+
+#navContainer {
+    z-index: 4;
+    position: fixed;
+    font-size: 12px;
+    color: #fff;
+    left: 4.583vw;
+    top: 55px;
+    // background-color: rgba(255,0,0,0.2);
+
+    ul {
+
+        li {
+            display: inline;
+            padding-right: 2.291vw;
+            letter-spacing: -0.5px;
+            font-weight: 600;
+
+            a {
+                position: relative;
+                text-decoration: none;
+                color: #fff;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -12px;
+                    left: 50%;
+                    height: 2px;
+                    width: 16px;
+                    background-color: #fff;
+                    transform: translateX(-50%) scaleX(0);
+                    transition: all 400ms;
+                }
+                &:hover::before {
+                    transform: translateX(-50%) scaleX(1);
+                }
+            }
+        }
+        
+        .room {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            border: 0;
+            background-color: transparent;
+            padding-right: 3.819vw;
+        }
+    }
+}

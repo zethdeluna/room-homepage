@@ -1,0 +1,18 @@
+// font
+@font-face {font-family: Spartan; font-weight: 500; src: url('./fonts/Spartan-Medium.ttf')};
+@font-face {font-family: Spartan; font-weight: 600; src: url('./fonts/Spartan-SemiBold.ttf')};
+@font-face {font-family: Spartan; font-weight: 700; src: url('./fonts/Spartan-Bold.ttf')};
+
+// colors 
+$dark-gray: hsl(0, 0%, 63%);
+$very-dark-gray: hsl(0, 0%, 27%);
+
+body {
+    font-family: Spartan;
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,79 @@
+// 
+// Navigation Bar Mobile Style
+// 
+
+#navMobile {
+    z-index: 8;
+    position: absolute;
+    top: 0;
+
+    .hamburger {
+        z-index: 8;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        top: 48px;
+        left: 24px;
+    }
+
+    .menu {
+        z-index: 9;
+        position: absolute;
+        top: 0;
+        height: 110px;
+        width: 100vw;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        transform: translateY(-110px);
+        transition: all 400ms;
+
+        &.active {
+            transform: translateY(0);
+        }
+        
+        ul {
+            position: relative;
+            margin-left: 26px;
+
+            li {
+                position: relative;
+                display: inline;
+                letter-spacing: -1px;
+                font-size: 12px;
+                font-weight: 600;
+                margin-left: 32px;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
+
+                button {
+                    background-color: transparent;
+                    border: none;
+                    transform: translateY(3px);
+                }
+            }
+
+            .close {
+                padding-top: 5px;
+                margin-right: 33px;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .darkenPage {
+        position: relative;
+        z-index: 8;
+        width: 100vw;
+        height: 0;
+        transition: background-color 400ms,
+            height 0s;
+
+        &.active {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+}

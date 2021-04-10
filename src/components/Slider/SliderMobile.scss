@@ -1,0 +1,132 @@
+// 
+// Slider Mobile Style
+// 
+
+// colors 
+$dark-gray: hsl(0, 0%, 63%);
+$very-dark-gray: hsl(0, 0%, 27%);
+
+#sliderMobileContainer {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+
+    .heroContainer {
+        position: relative;
+        width: 100%;
+        margin-bottom: 16vw;
+
+        .heroMobile {
+            width: 100%;
+            height: 45vh;
+            object-fit: cover;
+            object-position: center bottom;
+            transition: all 400ms;
+
+            &.out {
+                opacity: 0;
+            }
+        }
+
+        .companyTitle {
+            z-index: 5;
+            position: absolute;
+            top: 0;
+            color: #fff;
+            font-weight: 600;
+            left: 50%;
+            top: 40px;
+            transform: translateX(-50%);
+        }
+
+        .pageSwitchMobile {
+            z-index: 2;
+            position: absolute;
+            bottom: 1.6vw;
+            right: 0;
+
+            .previousPageMobile, .nextPageMobile {
+                z-index: 2;
+                width: 56px;
+                height: 56px;
+                border: 0;
+                background-color: #000;
+
+                &:active {
+                    background-color: $very-dark-gray;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .sliderTextMobile {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .headerMobile {
+            width: 325px;
+            font-weight: 600;
+            font-size: 28px;
+            letter-spacing: -1px;
+            margin-bottom: 25px;
+        }
+
+        .textMobile {
+            width: 325px;
+            font-size: 12px;
+            font-weight: 500;
+            color: $dark-gray;
+            line-height: 20px;
+            margin-bottom: 55px;
+        }
+
+        .out { 
+            opacity: 0;
+        }
+
+        .btnContMobile {
+            width: 325px;
+
+            .shopNowMobile {
+                font-family: inherit;
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: 10px;
+                border: none;
+                background-color: transparent;
+                margin-bottom: 70px;
+
+                img {
+                    padding-left: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    #sliderMobileContainer {
+        .heroContainer {
+            margin-bottom: 10vw;
+        }
+
+        .sliderTextMobile {
+            .headerMobile {
+                font-size: 26px;
+            }
+
+            .headerMobile, .textMobile, .btnContMobile {
+                width: 275px;
+            }
+        }
+    }
+}

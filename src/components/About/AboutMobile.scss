@@ -1,0 +1,58 @@
+// 
+// About Mobile Style
+// 
+
+// colors 
+$dark-gray: hsl(0, 0%, 63%);
+$very-dark-gray: hsl(0, 0%, 27%);
+
+#aboutMobileContainer {
+    display: flex;
+    flex-direction: column;
+
+    .darkImg {
+        width: 100vw;
+        object-fit: cover;
+        object-position: center bottom;
+        margin-bottom: 60px;
+    }
+
+    .lightImg {
+        width: 100vw;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .aboutTextMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .header {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            width: 325px;
+            margin-bottom: 15px;
+        }
+
+        .text {
+            width: 325px;
+            font-size: 12px;
+            color: $dark-gray;
+            line-height: 20px;
+            margin-bottom: 55px;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    #aboutMobileContainer {
+        .aboutTextMobile {
+            .header, .text {
+                width: 275px;
+            }
+        }
+    }
+}
