@@ -147,43 +147,25 @@ If you'd like to take a closer look at how I did it, the complete code is availa
 
 #### The Scroll
 This achievement was far simpler, yet to me, so much more satisfying. Here's a bit of background information: 
-- On the mobile version of the website, there is a hamburger menu button at the top left corner (see screenshots). At this state, the navigation menu was hidden off-screen using CSS:
-
-```css
-.menu {
-    ...
-    transform: translateY(-110px);
-    transition: all 400ms;
-}
-```
+- On the mobile version of the website, there is a hamburger menu button at the top left corner (see screenshots). 
+- When clicking that button, a navigation menu will open, and the button is replaced with an "X". 
+- Clicking that "X" will close the menu.
 
 What I wanted to do was have the navigation bar seamlessly close if the user decides to scroll through the page so that they have more screen space for the main content.
 
-Going back to the "X" button, closing the navigation menu 
+Going back to the "X" button, closing the navigation menu was achieved using a ```closeMenu()``` function which was assigned to the ```onClick``` attribute for the button (see complete code in ```/src/components/Navigation/NavigationMobile.js```). To get the menu to close when the user scrolls, all it took was the following:
 
-### Continued development
+```javascript
+useEffect(() => {
+    window.onscroll = (e) => {
+        closeMenu(e);
+    };
+});
+```
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+Essentially, every time a scroll action is detected, the menu will close. It's a very simple solution, but I found it so satisfying when I was testing it out on my phone.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Zeth De Luna](https://zethdeluna.com)
+- Frontend Mentor - [@zethdeluna](https://www.frontendmentor.io/profile/zethdeluna)
