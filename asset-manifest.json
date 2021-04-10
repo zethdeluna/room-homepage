@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/room-homepage/static/css/main.cf6e5e7d.chunk.css",
+    "main.js": "/room-homepage/static/js/main.2a3e981c.chunk.js",
+    "main.js.map": "/room-homepage/static/js/main.2a3e981c.chunk.js.map",
+    "runtime-main.js": "/room-homepage/static/js/runtime-main.c66d9a6b.js",
+    "runtime-main.js.map": "/room-homepage/static/js/runtime-main.c66d9a6b.js.map",
+    "static/js/2.1a229d69.chunk.js": "/room-homepage/static/js/2.1a229d69.chunk.js",
+    "static/js/2.1a229d69.chunk.js.map": "/room-homepage/static/js/2.1a229d69.chunk.js.map",
+    "static/js/3.5d2b05eb.chunk.js": "/room-homepage/static/js/3.5d2b05eb.chunk.js",
+    "static/js/3.5d2b05eb.chunk.js.map": "/room-homepage/static/js/3.5d2b05eb.chunk.js.map",
+    "index.html": "/room-homepage/index.html",
+    "static/css/main.cf6e5e7d.chunk.css.map": "/room-homepage/static/css/main.cf6e5e7d.chunk.css.map",
+    "static/js/2.1a229d69.chunk.js.LICENSE.txt": "/room-homepage/static/js/2.1a229d69.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/room-homepage/static/media/Spartan-SemiBold.88d40279.ttf",
+    "static/media/desktop-image-hero-1.91901d0d.jpg": "/room-homepage/static/media/desktop-image-hero-1.91901d0d.jpg",
+    "static/media/desktop-image-hero-2.9d354056.jpg": "/room-homepage/static/media/desktop-image-hero-2.9d354056.jpg",
+    "static/media/desktop-image-hero-3.05fd679a.jpg": "/room-homepage/static/media/desktop-image-hero-3.05fd679a.jpg",
+    "static/media/icon-angle-left.d53877df.svg": "/room-homepage/static/media/icon-angle-left.d53877df.svg",
+    "static/media/icon-angle-right.0ed3f81f.svg": "/room-homepage/static/media/icon-angle-right.0ed3f81f.svg",
+    "static/media/icon-arrow.84087786.svg": "/room-homepage/static/media/icon-arrow.84087786.svg",
+    "static/media/icon-close.3e88bd6e.svg": "/room-homepage/static/media/icon-close.3e88bd6e.svg",
+    "static/media/icon-hamburger.dc022bac.svg": "/room-homepage/static/media/icon-hamburger.dc022bac.svg",
+    "static/media/image-about-dark.329bbc44.jpg": "/room-homepage/static/media/image-about-dark.329bbc44.jpg",
+    "static/media/mobile-image-hero-1.5de3d147.jpg": "/room-homepage/static/media/mobile-image-hero-1.5de3d147.jpg",
+    "static/media/mobile-image-hero-2.51db290a.jpg": "/room-homepage/static/media/mobile-image-hero-2.51db290a.jpg",
+    "static/media/mobile-image-hero-3.601d0f37.jpg": "/room-homepage/static/media/mobile-image-hero-3.601d0f37.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c66d9a6b.js",
+    "static/js/2.1a229d69.chunk.js",
+    "static/css/main.cf6e5e7d.chunk.css",
+    "static/js/main.2a3e981c.chunk.js"
+  ]
+}
