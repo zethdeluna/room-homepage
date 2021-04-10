@@ -68,6 +68,38 @@ With that, the "next button" was then given an ```onClick``` attribute which cal
 page < 3 ? setPage(page + 1) : setPage(1)
 ```
 
+In the above code, (since there are only 3 pages in the slider) if the current page number is less than 3, then increment the page, but if the current page number is 3, then set the slider back to page 1. So, for now the "next page" function would look like this:
+
+```javascript
+const nextPage = () => {
+    page < 3 ? setPage(page + 1) : setPage(1);
+}
+```
+
+and the "previous page" button would perform the opposite:
+
+```javascript
+const previousPage = () => {
+    page > 1 ? setPage(page - 1) : setPage(3);
+}
+```
+
+Now, to get the transition fade effects I just added and removed the following CSS to each slider component:
+
+```css
+.out {
+    opacity: 0;
+}
+```
+
+For example, I referenced the hero image as such:
+
+```javascript
+const heroRef = useRef();
+...
+<img ref={heroRef} ...>
+```
+
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
