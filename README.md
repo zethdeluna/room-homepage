@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/responsive-homepage-built-with-react-hooks-scss-Bqkg7RoV9)
 - [Live Site](https://zethdeluna.github.io/room-homepage/)
 
 ## My process
@@ -52,7 +52,21 @@ While working on this project, I feel most accomplished from learning two things
 - closing the navigation menu when scrolling on the mobile site
 
 #### The Slider
-To achieve the transitions between pages in the slider component, I utilized React's ```useState```, ```useEffect``` and ```useRef```.
+To achieve the transitions between pages in the slider, I utilized React's ```useState```, ```useEffect``` and ```useRef```.
+
+The user is able to switch between the pages of a slider by clicking its left and right buttons (seen above in the screenshots). I utilized ```useState``` to update the current page of the slider as follows:
+
+There are 3 total slider pages. If the user clicks the "next button" (right arrow), the slider will move from page 1 to page 2. If they click again the slider will move from page 2 to page 3. And another click would move from page 3 to page 1. Thanks to React's ```useState```, I can update the current state of the slider and set its initial state using
+
+```javascript
+const [page, setPage] = useState(1);
+```
+
+With that, the "next button" was then given an ```onClick``` attribute which calls a function that contains the following code:
+
+```javascript
+page < 3 ? setPage(page + 1) : setPage(1)
+```
 
 ### Continued development
 
