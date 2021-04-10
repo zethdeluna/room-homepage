@@ -62,7 +62,7 @@ There are 3 total slider pages. If the user clicks the "next button" (right arro
 const [page, setPage] = useState(1);
 ```
 
-With that, the "next button" was then given an ```onClick``` attribute which calls a function that contains the following code:
+With that, the "next" button was then given an ```onClick``` attribute which calls a function that contains the following code:
 
 ```javascript
 page < 3 ? setPage(page + 1) : setPage(1)
@@ -84,7 +84,27 @@ const previousPage = () => {
 }
 ```
 
-Now, to get the transition fade effects I just added and removed the following CSS to each slider component:
+To update the content of the page, I used ```useEffect``` (similar to ```componentDidMount()```) combined with ```useRef```. For example, the hero image was referenced with
+
+```javascript
+const heroRef = useRef();
+...
+<img ref={heroRef} ...>
+```
+
+and was updated within the ```useEffect``` function based on what the current slider page number was:
+
+```javascript
+useEffect(() => {
+    if (page === 1) {
+        heroRef.current.src = hero1;
+    } else if (page === 2) ...
+});
+```
+
+The same idea was applied to the text elements.
+
+Now, to get the transition fade effects I just added and removed the following CSS to each slider element:
 
 ```css
 .out {
@@ -92,13 +112,36 @@ Now, to get the transition fade effects I just added and removed the following C
 }
 ```
 
-For example, I referenced the hero image as such:
+That combined with a ```transition``` attribute in each element's CSS would give that fade effect.
+
+Clicking next (or previous) will add ```.out```, thus fading the slider elements out. We'll then fade the elements back in after the content is updated within the ```useEffect``` function. The current code would look something like this:
 
 ```javascript
-const heroRef = useRef();
-...
-<img ref={heroRef} ...>
+const nextPage = () => {
+    heroRef.current.classList.add("out");
+    page < 3 ? setPage(page + 1) : setPage(1);
+};
+const previousPage = ... ;
+useEffect(() => {
+    heroRef.current.classList.remove("out");
+    if (page === 1) ...
+});
 ```
+
+However, if you run this code you would notice that the slider pages still switch instantly, with no transition effects. This is because the ```out``` class is being added and then immediately being removed. To address this, I placed the page-update code within a ```setTimeout``` function and added a 200ms delay:
+
+```javascript
+const nextPage = () => {
+    heroRef.current.classList.add("out");
+    setTimeout(() => {
+        page < 3 ? setPage(page + 1) : setPage(1);
+    }, 200);
+};
+```
+
+This would allow the elements to fade out first, then after 200ms the page number would increment (or decrement if pressing the "previous" button), and then fade back in with the new content. 
+
+If you'd like to take a closer look at how I did it, the complete code is available above in ```/src/components/Slider/Slider.js```.
 
 ### Continued development
 
